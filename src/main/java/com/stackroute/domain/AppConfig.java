@@ -11,7 +11,7 @@ public class AppConfig {
     @Bean
     public Movie movieBean1()
     {
-        return new Movie();
+        return new Movie(actorBean1());
     }
 
     //Actor Bean
