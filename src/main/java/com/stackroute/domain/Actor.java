@@ -9,7 +9,7 @@ public class Actor {
     private String gender;
     @Value("21")
     private int age;
-
+//use getter and setter methods
     public void setName(String name) {
         this.name = name;
     }

@@ -11,12 +11,12 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
 public static void main(String args[])
 {
-    //use ApplicationContext
+    //By using ApplicationContext
     ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
     Movie movie1=context.getBean(Movie.class);
     movie1.display();
 
-    //use BeanFactory
+    //By using BeanFactory
     BeanFactory factory=new AnnotationConfigApplicationContext(AppConfig.class);
     Movie movie2=factory.getBean(Movie.class);
     movie2.display();
